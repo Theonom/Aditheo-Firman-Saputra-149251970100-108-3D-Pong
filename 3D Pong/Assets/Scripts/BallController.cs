@@ -61,4 +61,12 @@ public class BallController : MonoBehaviour
             ballManager.RemoveBall(gameObject);
         }
     }
+
+   /* private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.name == "Arena")
+        {
+            rig.constraints = RigidbodyConstraints.FreezePositionY;
+        }
+    }*/
 }

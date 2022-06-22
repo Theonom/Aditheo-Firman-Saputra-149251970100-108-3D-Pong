@@ -10,6 +10,9 @@ public class ScoreManager : MonoBehaviour
     public int playerScore3;
     public int playerScore4;
 
+    public GameObject gawang1, gawang2, gawang3, gawang4;
+    public GameObject player1, player2, player3, player4;
+
     public int maxScore;
 
     public void AddScorePlayer1(int increment)
@@ -18,7 +21,8 @@ public class ScoreManager : MonoBehaviour
 
         if(playerScore1 >= maxScore)
         {
-            GameOver();
+            gawang1.GetComponent<Collider>().isTrigger = false;
+            player1.SetActive(false);
         }
     }
 
@@ -28,7 +32,8 @@ public class ScoreManager : MonoBehaviour
 
         if (playerScore2 >= maxScore)
         {
-            GameOver();
+            gawang2.GetComponent<Collider>().isTrigger = false;
+            player2.SetActive(false);
         }
     }
 
@@ -38,7 +43,8 @@ public class ScoreManager : MonoBehaviour
 
         if (playerScore3 >= maxScore)
         {
-            GameOver();
+            gawang3.GetComponent<Collider>().isTrigger = false;
+            player3.SetActive(false);
         }
     }
 
@@ -48,7 +54,8 @@ public class ScoreManager : MonoBehaviour
 
         if (playerScore4 >= maxScore)
         {
-            GameOver();
+            gawang4.GetComponent<Collider>().isTrigger = false;
+            player4.SetActive(false);
         }
     }
 

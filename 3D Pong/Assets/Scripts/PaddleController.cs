@@ -6,10 +6,7 @@ public class PaddleController : MonoBehaviour
 {
     public int speed;
 
-    public KeyCode upKey;
-    public KeyCode downKey;
-    public KeyCode rightKey;
-    public KeyCode leftKey;
+    public KeyCode upKey, downKey, rightKey, leftKey;
 
     private Rigidbody rig;
 

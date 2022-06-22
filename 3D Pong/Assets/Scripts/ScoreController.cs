@@ -5,10 +5,7 @@ using UnityEngine.UI;
 
 public class ScoreController : MonoBehaviour
 {
-    public Text skorPlayer1;
-    public Text skorPlayer2;
-    public Text skorPlayer3;
-    public Text skorPlayer4;
+    public Text skorPlayer1, skorPlayer2, skorPlayer3, skorPlayer4;
 
     public ScoreManager manager;
 
