@@ -542,10 +542,10 @@ RectTransform:
   m_Father: {fileID: 1425718199}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -183, y: 269.9}
-  m_SizeDelta: {x: 128.126, y: 39.624}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 217, y: -30.099976}
+  m_SizeDelta: {x: 128.12598, y: 39.623993}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &307884649
 MonoBehaviour:
@@ -1085,7 +1085,7 @@ MonoBehaviour:
   player3: {fileID: 1099669782}
   player4: {fileID: 1205550810}
   gameOverUI: {fileID: 1198534071}
-  playerWinner: 
+  playerWinner: player winner
   maxScore: 1
 --- !u!4 &469114353
 Transform:
@@ -1498,10 +1498,10 @@ RectTransform:
   m_Father: {fileID: 1425718199}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 183, y: 269.9}
-  m_SizeDelta: {x: 128.126, y: 39.624}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -217, y: -30.099976}
+  m_SizeDelta: {x: 128.12598, y: 39.623993}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &746020250
 MonoBehaviour:
@@ -2010,10 +2010,10 @@ RectTransform:
   m_Father: {fileID: 1425718199}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -318, y: 269.9}
-  m_SizeDelta: {x: 128.126, y: 39.624}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 82, y: -30.099976}
+  m_SizeDelta: {x: 128.12598, y: 39.623993}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &958194385
 MonoBehaviour:
@@ -2673,7 +2673,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -3237,7 +3237,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -3584,18 +3584,18 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1916538122}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -46}
+  m_LocalPosition: {x: 0, y: 0, z: -46.00001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1423659753}
   m_Father: {fileID: 1425718199}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 318, y: 269.9}
-  m_SizeDelta: {x: 128.126, y: 39.624}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 128.12598, y: 39.623993}
+  m_Pivot: {x: 1, y: 1}
 --- !u!114 &1916538124
 MonoBehaviour:
   m_ObjectHideFlags: 0
