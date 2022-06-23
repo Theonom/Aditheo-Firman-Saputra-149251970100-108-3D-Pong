@@ -1086,7 +1086,7 @@ MonoBehaviour:
   player4: {fileID: 1205550810}
   gameOverUI: {fileID: 1198534071}
   playerWinner: player winner
-  maxScore: 1
+  maxScore: 15
 --- !u!4 &469114353
 Transform:
   m_ObjectHideFlags: 0
