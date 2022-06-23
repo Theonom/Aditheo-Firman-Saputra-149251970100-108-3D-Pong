@@ -1071,6 +1071,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f625082ed57bcb4499298699e0bb0155, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sumPlayer: 4
   playerScore1: 0
   playerScore2: 0
   playerScore3: 0
@@ -1083,7 +1084,9 @@ MonoBehaviour:
   player2: {fileID: 310143127}
   player3: {fileID: 1099669782}
   player4: {fileID: 1205550810}
-  maxScore: 15
+  gameOverUI: {fileID: 1198534071}
+  playerWinner: 
+  maxScore: 1
 --- !u!4 &469114353
 Transform:
   m_ObjectHideFlags: 0
@@ -1828,7 +1831,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 881131641}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1198534076}
+        m_TargetAssemblyTypeName: GameOverManager, Assembly-CSharp
+        m_MethodName: GoToMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &881131641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2263,7 +2278,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1099116871}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1198534076}
+        m_TargetAssemblyTypeName: GameOverManager, Assembly-CSharp
+        m_MethodName: GoToReplay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1099116871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2603,13 +2630,15 @@ GameObject:
   - component: {fileID: 1198534074}
   - component: {fileID: 1198534073}
   - component: {fileID: 1198534072}
+  - component: {fileID: 1198534076}
+  - component: {fileID: 1198534077}
   m_Layer: 5
   m_Name: Game Over Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1198534072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2691,6 +2720,39 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1198534076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198534071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb9aadbb5773ee147998ae0d1ab8b087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerWin: {fileID: 1450842163}
+  manager: {fileID: 469114352}
+--- !u!95 &1198534077
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198534071}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7675f4257355d9749ba6a69e48e5fb2f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1205550810
 GameObject:
   m_ObjectHideFlags: 0
